@@ -1,0 +1,13 @@
+name: test1
+
+on:
+  schedule:
+    - cron: '*/1 * * * *'  # Every minute
+
+jobs:
+  test1: 
+    name: testing
+    runs-on: ubuntu-latest
+    steps:
+      - name: 23f3003877@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
