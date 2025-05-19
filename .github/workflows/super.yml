@@ -3,9 +3,10 @@ name: test1
 on:
   schedule:
     - cron: '*/1 * * * *'  # Every minute
+  workflow_dispatch:        # Allows manual trigger for testing
 
 jobs:
-  test1: 
+  test1:
     name: testing
     runs-on: ubuntu-latest
     steps:
